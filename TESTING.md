@@ -43,7 +43,7 @@ Breaking the retry delays or the "gone" error check makes 4 of them fail.
 **Hands-on trial by Tim (2026-10-26)**
 
 Tim loaded the extension unpacked in Brave Origin 1.97.59 (Linux) and reported
-"everything works so far". He didn't say which checklist items he tried, so
+"everything works so far". No per-item results were given, so
 the table below still marks each one "not yet verified" until there are
 per-item results.
 
