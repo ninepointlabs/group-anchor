@@ -5,7 +5,9 @@
   "description": "Dev tooling for the Group Anchor extension. The extension itself has no dependencies.",
   "license": "MIT",
   "scripts": {
-    "test": "node tests/integration.mjs",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "node tests/error-handling.mjs",
+    "test:integration": "node tests/integration.mjs",
     "icons": "node scripts/make-icons.js"
   },
   "devDependencies": {

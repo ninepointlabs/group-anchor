@@ -5,7 +5,7 @@
 // programmatic, not real keyboard/mouse input, so it doesn't replace the
 // manual checklist in TESTING.md.
 //
-// Run with: npm test
+// Run with: npm run test:integration (or npm test for both suites)
 //   CHROMIUM_PATH=/usr/bin/chromium  use a system Chromium instead of
 //                                    Playwright's bundled one
 //   SCREENSHOT=popup.png             save a screenshot of the popup page

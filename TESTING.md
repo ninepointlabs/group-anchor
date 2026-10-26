@@ -30,7 +30,9 @@ Development section for setup).
 
 **Mocked unit check of error handling**
 
-`background.js` ran in Node with a stubbed `chrome` object.
+`background.js` ran in Node with a stubbed `chrome` object
+(`tests/error-handling.mjs`, run with `npm run test:unit`). 5/5 checks pass.
+Breaking the retry delays or the "gone" error check makes 4 of them fail.
 
 - A drag error thrown twice and then cleared → the move was retried and
   succeeded.
