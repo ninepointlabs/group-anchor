@@ -23,8 +23,10 @@ Status as of 2026-10-26, before review.
   actions, then checked the resulting tab order.
 
 **This is not the same as manual testing.** There was no real keyboard, mouse,
-drag-and-drop, or visible tab strip, and the test harness isn't committed to
-the repo.
+drag-and-drop, or visible tab strip.
+
+The harness is `tests/integration.mjs`. Run it with `npm test` (see the README's
+Development section for setup).
 
 **Mocked unit check of error handling**
 
