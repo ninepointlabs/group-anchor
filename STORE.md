@@ -15,7 +15,7 @@ account. Copy the text into the matching fields in the
       1–7 in both browsers before publishing.
 - [ ] Placeholder icons replaced (optional, but the 128 px icon is the store
       icon). Run `npm run icons` after changing `scripts/make-icons.js`.
-- [ ] `PRIVACY.md` published at a public URL with a contact address filled in
+- [ ] `PRIVACY.md` merged into `main` (so its public URL works) with a contact address filled in
       (see "Privacy policy URL" below).
 - [ ] `version` bumped in **both** `manifest.json` and `package.json` if this
       version was uploaded before. Each upload needs a higher version.
@@ -89,8 +89,9 @@ screenshot of the tab strip (for example Brave's vertical tabs before and
 after) would make a stronger first image. Capture it at exactly 1280×800 or
 640×400.
 
-**Homepage / support URL:** the GitHub repo, once it's public. Otherwise leave
-it blank.
+**Homepage URL:** https://github.com/ninepointlabs/group-anchor
+
+**Support URL:** https://github.com/ninepointlabs/group-anchor/issues
 
 ## Privacy practices tab
 
@@ -131,14 +132,13 @@ statements:
 
 **Privacy policy URL:** the extension collects no user data, so a policy may
 not be strictly required. Linking one avoids reviewer questions. `PRIVACY.md`
-is ready, but **the repo is private, so its GitHub URL won't load for
-reviewers**. Options:
+is ready, and the repo is public, so link:
 
-1. Make the repo public and link
-   `https://github.com/ninepointlabs/group-anchor/blob/main/PRIVACY.md`
-   (only after this PR is merged into `main`).
-2. Host the same text anywhere public, such as a personal site or a public
-   gist.
+```
+https://github.com/ninepointlabs/group-anchor/blob/main/PRIVACY.md
+```
+
+That URL only works once this file is merged into `main`.
 
 ## Distribution tab
 
