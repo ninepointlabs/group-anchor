@@ -104,7 +104,12 @@ Permissions: `tabs`, `tabGroups`, `storage`. Nothing else.
     settings and the popup. It needs `npm install` (Playwright is the only dev
     dependency) and a Chromium: either run `npx playwright install chromium`,
     or point at a system build with `CHROMIUM_PATH=/usr/bin/chromium`. Set
-    `SCREENSHOT=popup.png` to save a screenshot of the popup.
+    `SCREENSHOT=popup.png` to save a screenshot of the popup. Set
+    `EXTENSION_DIR` to test another copy, such as the unpacked store zip.
+- Chrome Web Store: `npm run package` builds `dist/group-anchor-<version>.zip`
+  (extension files only). `npm run store-images` renders the listing images
+  into `store/`. See [STORE.md](STORE.md) for the listing text and
+  submission steps, and [PRIVACY.md](PRIVACY.md) for the privacy policy.
 - `package.json` and `node_modules/` are dev-only and nothing in the extension
   references them. The folder still loads unpacked with them present.
 - See [TESTING.md](TESTING.md) for the manual test checklist and what has been

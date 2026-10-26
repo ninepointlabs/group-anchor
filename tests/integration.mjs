@@ -9,13 +9,17 @@
 //   CHROMIUM_PATH=/usr/bin/chromium  use a system Chromium instead of
 //                                    Playwright's bundled one
 //   SCREENSHOT=popup.png             save a screenshot of the popup page
+//   EXTENSION_DIR=path               test another copy of the extension,
+//                                    e.g. the unpacked store zip
 import { chromium } from "playwright";
 import fs from "fs";
 import os from "os";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const EXT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const EXT = path.resolve(
+  process.env.EXTENSION_DIR || path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
+);
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "group-anchor-test-"));
 const ctx = await chromium.launchPersistentContext(profile, {
   executablePath: process.env.CHROMIUM_PATH || undefined,

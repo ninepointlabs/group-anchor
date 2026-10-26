@@ -8,7 +8,9 @@
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "node tests/error-handling.mjs",
     "test:integration": "node tests/integration.mjs",
-    "icons": "node scripts/make-icons.js"
+    "icons": "node scripts/make-icons.js",
+    "package": "node scripts/package.js",
+    "store-images": "node scripts/store-images.mjs"
   },
   "devDependencies": {
     "playwright": "^1.64.1"
