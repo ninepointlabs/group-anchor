@@ -34,4 +34,5 @@ address with a new "Last updated" date.
 
 ## Contact
 
-<!-- TODO before publishing: add a public contact address. -->
+Questions about this policy or the extension: open an issue at
+https://github.com/ninepointlabs/group-anchor/issues

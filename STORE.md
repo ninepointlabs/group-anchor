@@ -15,8 +15,8 @@ account. Copy the text into the matching fields in the
       1–7 in both browsers before publishing.
 - [ ] Placeholder icons replaced (optional, but the 128 px icon is the store
       icon). Run `npm run icons` after changing `scripts/make-icons.js`.
-- [ ] `PRIVACY.md` merged into `main` (so its public URL works) with a contact address filled in
-      (see "Privacy policy URL" below).
+- [ ] `PRIVACY.md` merged into `main` so its public URL works (see "Privacy
+      policy URL" below).
 - [ ] `version` bumped in **both** `manifest.json` and `package.json` if this
       version was uploaded before. Each upload needs a higher version.
 
